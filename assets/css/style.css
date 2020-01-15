@@ -1,0 +1,14 @@
+body{
+  font-family: 'Nunito', sans-serif;
+}
+
+.bg-celeste{
+  background-color: #0499EF;
+}
+
+.hero{
+  background-image: url("../img/bg_hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10rem;
+}
