@@ -1,5 +1,5 @@
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="popover"]').popover()
 
   $("a").click(function(event){
     if(this.hash !== ""){
