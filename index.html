@@ -48,12 +48,12 @@
 
     <header class="hero text-white">
       <div class="container p-5">
-        <h1 class="mt-5 display-4 p-3">Hola</h1>
+        <h1 class="mt-5 display-4 p-5">Hola</h1>
         <h1 class="font-weight-bold display-2 p-3"> Me llamo Braulio :)</h1>
       </div>
     </header>
 
-    <section id="sobre-mi" class="my-5 py-5">
+    <section id="sobre-mi" class="my-5 py-5 d-none d-sm-block">
       <div class="container">
         <h4 class=" text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
         <div class="row">
@@ -97,7 +97,7 @@
           <div class="card-body">
             <h5 class="card-title">Meet&Coffee</h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="btn btn-outline-secondary" data-toggle="tooltip" data-placement="right" title="Haz click para conocer más detalles">Ver más</a>
+            <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#meet_coffee">Ver más</a>
           </div>
         </div>
         <div class="card">
@@ -105,7 +105,7 @@
           <div class="card-body">
             <h5 class="card-title">Iguana Page</h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="btn btn-outline-secondary" data-toggle="tooltip" data-placement="right" title="Haz click para conocer más detalles">Ver más</a>
+            <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#iguana_page">Ver más</a>
           </div>
         </div>
         <div class="card">
@@ -113,7 +113,7 @@
           <div class="card-body">
             <h5 class="card-title">Suricata</h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="btn btn-outline-secondary" data-toggle="tooltip" data-placement="right" title="Haz click para conocer más detalles">Ver más</a>
+            <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#suricata">Ver más</a>
           </div>
         </div>
       </div>
@@ -124,22 +124,84 @@
       <div class="typeform-widget" data-url="https://braulioardiles.typeform.com/to/J1lvo7" style="width: 100%; height: 350px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=J1lvo7&utm_source=typeform.com-01DXVPFDB4S7FMADC2TDXF2S9E-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
     </section>
 
+
+<!-- Modal -->
+    <div class="modal fade" id="meet_coffee" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Meet&Coffee</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/meet_coffee.png" alt="" class="img-fluid">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="iguana_page" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Iguana Page</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/iguana_page.png" alt="" class="img-fluid">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="suricata" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Suricata</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/suricata.png" alt="" class="img-fluid">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
     <footer class="p-3 text-center container-fluid bg-celeste text-white">
       <div class="row mx-auto">
         <div class="col-6">
           <h4 class="font-weight-bold">BrauArdiles</h4>
         </div>
         <div class="col-1">
-          <i class="fab fa-github-square fa-2x"></i>
+          <a href="https://github.com/Brauardiles"><i class="fab fa-github-square fa-2x"></i>
         </div>
         <div class="col-1">
-          <i class="fab fa-linkedin fa-2x"></i>
+          <a href="https://www.linkedin.com/in/braulio-ardiles-46491687/"><i class="fab fa-linkedin fa-2x"></i>
         </div>
         <div class="col-1">
-          <i class="fab fa-twitter-square fa-2x"></i>
+          <a href="#"><i class="fab fa-twitter-square fa-2x"></i>
         </div>
         <div class="col-1">
-          <i class="fab fa-facebook-square fa-2x"></i>
+          <a href="https://www.facebook.com/braulio.ardilesmunoz"><i class="fab fa-facebook-square fa-2x"></i>
         </div>
       </div>
 
